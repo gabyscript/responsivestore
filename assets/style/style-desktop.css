@@ -1,0 +1,165 @@
+@media(min-width: 992px) {
+
+    * {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .grid-layout {
+        display: grid;
+        grid-template-areas: 
+        "header nav nav"
+        "header main main"
+        "footer section section";
+        grid-template-columns: 17% 43% 40%;
+        
+    }
+
+    /* Barra de navegación*/
+
+    .navbar {
+        background-color: #bdc192;
+        grid-area: header;
+        width: 17vw;
+        height: 115vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+        
+    }
+
+    .navbar-logo {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        position: sticky;
+        
+    }
+
+    .navbar-logo i {
+        margin-bottom: 2vh;
+        margin-left: 2vw;
+    }
+
+    .logo-name {
+        font-size: 2.5vw;
+        color:#000;
+    }
+
+    .navbar-options {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+        position: sticky;
+
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    /* Search bar*/
+
+    .search-section {
+        background-color: #f0f4c3;
+        grid-area: nav;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        
+    }    
+
+    .search-info {
+        font-size: 1.5vw;
+    }
+
+    /*Main productos*/
+
+    .main-products {
+        background-color: #fffff6;
+        grid-area: main;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 7px;
+        
+    }
+
+    #product-4,#product-5,#product-6,#product-7,#product-8{
+        display: flex;
+    } 
+
+    .product {
+        display: flex;
+        width: 220px;
+        height: 290px;
+    }
+
+    .product-img img {
+        width: 130px;
+        height: 200px;
+    }
+
+    .vermas-button {
+        background-color: #f0f4c3;
+        border-radius: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vermas-p {
+        font-weight: 400;
+        font-size: 1.3vw;
+    }
+
+    /* Botones de página */
+
+    .page-buttons {
+        background-color: #fffff6;
+        grid-area: section;
+        height: 15vh;
+        
+    }
+
+    /*Footer y RRSS*/
+
+    .footer-socials {
+        background-color: #bdc192;        
+        grid-area: footer;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+       
+    }
+
+    .footer-rights {
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

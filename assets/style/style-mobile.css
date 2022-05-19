@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+}
+
+
+.grid-layout {
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "section section"
+    "footer footer";
+}
+
+/* Barra de navegación*/
+
+.navbar {
+    background-color: #bdc192;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-logo i {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.logo-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.4vw;
+    font-size: 6vw;
+
+}
+
+.navbar-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2vw;
+}
+
+.navbar-list {
+    display: none;
+}
+
+/* Header de búsqueda*/
+
+.search-section {
+    background-color: #f0f4c3;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.search-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+
+/*Main productos*/
+
+.main-products {
+    background-color: #fff6ff;
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 320px;
+    height: 400px;
+    background-color: #fff6ff;
+    border: solid 1px #bdc192;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    width: 200px;
+    height: 300px;
+}
+
+.product-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#product-2,#product-3,#product-4,#product-5,#product-6 {
+    display: none;
+}
+
+.vermas-button {
+    background-color: #f0f4c3;
+    border: solid 1px #bdc998;
+    border-radius: 10%;
+    width: 15vw;
+    height: 5vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botones de página*/
+
+.page-buttons {
+    background-color: #fff6ff;
+    height: 6vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2vw;   
+}
+
+.page-button {
+    background-color: #f0f4c3;
+    border-radius: 10%;
+    border: solid 1px #bdc998;
+    width: 5vw;
+    height: 4vh;
+}
+
+.page-buttons a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #010101;
+}
+
+/*Footer y RRSS*/
+
+.footer-socials {
+    background-color: #f0f4c3;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.facebook-logo {
+    margin-right: 2vw;
+}
+
+.footer-rights {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.3vw;
+}
